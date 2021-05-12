@@ -1,1 +1,1 @@
-export const calculateDurationSum = (lessons) => lessons.reduce((acc, l) => acc + l.duration, 0);
+export const calculateDurationSum = durations => durations.reduce((acc, d) => acc + d, 0);

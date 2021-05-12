@@ -81,5 +81,5 @@ export const initLessons = () => {
         lessons.forEach(l => console.log(l));
     });
 
-    document.querySelector('#duration-sum').textContent = `${calculateDurationSum(lessons)}perc`;
+    document.querySelector('#duration-sum').textContent = `${calculateDurationSum(lessons.map(l => l.duration))}perc`;
 }
